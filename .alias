@@ -1,0 +1,6 @@
+# Activate any host specific aliases (Not tracked via git)
+if [ -f ~/.alias_local ]; then
+  source ~/.alias_local
+fi
+
+alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"
