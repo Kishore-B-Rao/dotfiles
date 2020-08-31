@@ -108,6 +108,13 @@ export TERM=xterm-256color
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+
+# Pull in host specific configurations
+if [ -f ~/.zshrc_local ]; then
+  source ~/.zshrc_local
+fi
+
+
 ################# Virtualenv and Virtualenvwrapper Setup ##############
 # set where virutal environments will live
 export WORKON_HOME=$HOME/.virtualenvs
@@ -128,9 +135,4 @@ fi
 # All aliases are located in alias file for easy abstraction
 if [ -f ~/.alias ]; then
   source ~/.alias
-fi
-
-# Pull in host specific configurations
-if [ -f ~/.zshrc_local ]; then
-  source ~/.zshrc_local
 fi
