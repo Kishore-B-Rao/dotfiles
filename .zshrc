@@ -9,7 +9,7 @@ fi
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/kishore.rao/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Disable checking for insecure completions, to speed up shell load
 ZSH_DISABLE_COMPFIX=true
