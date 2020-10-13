@@ -87,7 +87,7 @@ Run the following from the root: <br/>
 ## Iterm2 Settings
 Share settings as described in http://stratus3d.com/blog/2015/02/28/sync-iterm2-profile-with-dotfiles-repository/. 
 
-1. Goto `Iterm2` -> `Preferences` -> `Preferences`. Select `Load Preferences from a custom folder or URL`
+1. Go to `Iterm2` -> `Preferences` -> `Preferences`. Select `Load Preferences from a custom folder or URL`
 2. Point to `$HOME/iterm2_profile`
 
 ## Configs Managed By This Repo
