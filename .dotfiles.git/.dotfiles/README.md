@@ -43,8 +43,9 @@ Before syncing the dotfiles its a good idea to install all the necessary tools. 
 Note this will also add  `[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh` to your zshrc
 
 ## Virtualenv and Virtualenvwrapper
-1. `pip3 install virtualenv virtualenvwrapper` or `pip install virtualenv virtualenvwrapper` for python2 version
-2. If you install with Pip 3 you will need `export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3` in .zshrc
+1. If you do not have a `usr/local/bin/python3` run `brew install python3`
+2. `pip3 install virtualenv virtualenvwrapper` or `pip install virtualenv virtualenvwrapper` for python2 version
+3. If you install with Pip 3 you will need `export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3` in .zshrc
 Note that other configs should be synced via the dofile but here it is to be sure:
 
 ```
