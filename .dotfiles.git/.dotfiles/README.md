@@ -71,11 +71,7 @@ Dotfiles synced via https://www.anand-iyer.com/blog/2018/a-simpler-way-to-manage
 
 1. `mkdir $HOME/.dotfiles`
 2. `git init --bare $HOME/.dotfiles`
-
-Add alias to zshrc: <br/>
 3. `alias dotfiles='/usr/local/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME`
-
-Configure Repository: <br/>
 4. `dotfiles config --local status.showUntrackedFiles no`
 5. `dotfiles remote add origin git@github.com:Kishore-B-Rao/dotfiles.git`
 
