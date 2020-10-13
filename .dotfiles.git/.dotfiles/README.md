@@ -72,26 +72,26 @@ Dotfiles synced via https://www.anand-iyer.com/blog/2018/a-simpler-way-to-manage
 1. `mkdir $HOME/.dotfiles`
 2. `git init --bare $HOME/.dotfiles`
 
-Add alias to zshrc
+Add alias to zshrc: <br/>
 3. `alias dotfiles='/usr/local/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME`
 
-Configure Repository
+Configure Repository: <br/>
 4. `dotfiles config --local status.showUntrackedFiles no`
 5. `dotfiles remote add origin git@github.com:Kishore-B-Rao/dotfiles.git`
 
 ## New Machine Setup
 
-Run the following from the root:
+Run the following from the root: <br/>
 1. `git clone --separate-git-dir=$HOME/.dotfiles git@github.com:Kishore-B-Rao/dotfiles.git tmpdotfiles`
 2. `rsync -n --recursive --verbose --exclude '.git' tmpdotfiles/ $HOME/` <-- `-n` flag does a dry run so you can see what files will change
 3. `rsync --recursive --verbose --exclude '.git' tmpdotfiles/ $HOME/`
 4. `rm -r tmpdotfiles`
 
 ## Configs Managed By This Repo
-.zshrc 
-.aliases
-.local
-.gitconfig
-.local(dont have yet)
-.vimrc
-.p10k.zsh
+.zshrc <br/>
+.aliases <br/>
+.local <br/>
+.gitconfig <br/>
+.local(dont have yet)<br/>
+.vimrc <br/>
+.p10k.zsh <br/>
